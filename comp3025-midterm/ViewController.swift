@@ -10,16 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet var quantityLabel1: UILabel!
+    @IBOutlet var quantityLabel2: UILabel!
+    @IBOutlet var quantityLabel3: UILabel!
+    @IBOutlet var quantityLabel4: UILabel!
+    @IBOutlet var quantityLabel5: UILabel!
+    @IBOutlet var quantityLabel6: UILabel!
+    
+    @IBOutlet var quantityStepper1: UIStepper!
+    @IBOutlet var quantityStepper2: UIStepper!
+    @IBOutlet var quantityStepper3: UIStepper!
+    @IBOutlet var quantityStepper4: UIStepper!
+    @IBOutlet var quantityStepper5: UIStepper!
+    @IBOutlet var quantityStepper6: UIStepper!
+
+    @IBAction func stepperAction1(sender: UIStepper) {
+        quantityLabel1.text = Int(sender.value).description
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func stepperAction2(sender: UIStepper) {
+        quantityLabel2.text = Int(sender.value).description
     }
-
-
+    @IBAction func stepperAction3(sender: UIStepper) {
+        quantityLabel3.text = Int(sender.value).description
+    }
+    @IBAction func stepperAction4(sender: UIStepper) {
+        quantityLabel4.text = Int(sender.value).description
+    }
+    @IBAction func stepperAction5(sender: UIStepper) {
+        quantityLabel5.text = Int(sender.value).description
+    }
+    @IBAction func stepperAction6(sender: UIStepper) {
+        quantityLabel6.text = Int(sender.value).description
+    }
 }
 
